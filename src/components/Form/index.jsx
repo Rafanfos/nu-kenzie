@@ -29,6 +29,7 @@ const Form = ({ listTransactions, setListTransactions }) => {
         placeholder="Digite aqui sua descrição"
         id="description"
         onChange={(event) => setDescription(event.target.value)}
+        required
       ></input>
       <span className="grey50 small">Ex: compra de roupas</span>
       <div className="values">
@@ -42,6 +43,7 @@ const Form = ({ listTransactions, setListTransactions }) => {
               placeholder="1"
               id="value"
               onChange={(event) => setValue(event.target.value)}
+              required
             ></input>
             <span className="grey3">R$</span>
           </div>
@@ -54,6 +56,7 @@ const Form = ({ listTransactions, setListTransactions }) => {
             id="type"
             className="grey1 grey3"
             onChange={(event) => setType(event.target.value)}
+            required
           >
             <option></option>
             <option className="grey3">Entrada</option>
