@@ -1,0 +1,85 @@
+ul {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  padding: 0;
+  gap: 20px;
+  font-family: "Nunito", sans-serif;
+  overflow: auto;
+  max-height: 100%;
+}
+
+li {
+  width: 95%;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+li > div {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+}
+
+#retangle {
+  width: 5px;
+}
+
+.card-p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.description_type {
+  display: flex;
+  flex-direction: column;
+}
+
+.value_trash {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 60%;
+}
+
+.value_trash > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  padding: 0;
+  width: 22px;
+}
+
+.value_trash > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  padding: 0;
+  width: 22px;
+}
+
+.value_trash > button:hover {
+  background-color: var(--grey-3);
+}
+
+img {
+  width: 8px;
+}
+
+@media (min-width: 768px) {
+  #retangle {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}

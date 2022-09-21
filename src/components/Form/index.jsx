@@ -8,7 +8,11 @@ const Form = ({ listTransactions, setListTransactions }) => {
 
   const handleTrasactions = (event) => {
     event.preventDefault();
-    setListTransactions({ description: description, value: value, type: type });
+    setListTransactions([
+      ...listTransactions,
+      { description: description, value: value, type: type },
+    ]);
+    console.log(listTransactions);
   };
 
   return (

@@ -2,7 +2,7 @@ import "./style.css";
 
 const LandingPage = ({ setEntered }) => {
   return (
-    <main>
+    <main className="main_landing">
       <div className="menu">
         <div className="presentation_text">
           <img className="logo" src="./assets/Nu Kenzie_white.png" alt="logo" />

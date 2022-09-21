@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap");
+
 :root {
   --primary: #fd377e;
   --primary-2: #e34981;
@@ -11,6 +13,10 @@
 
 .primary {
   background-color: var(--primary);
+}
+
+.secondary {
+  background-color: var(--secondary);
 }
 
 .grey1 {
