@@ -10,7 +10,11 @@ const Form = ({ listTransactions, setListTransactions }) => {
     event.preventDefault();
     setListTransactions([
       ...listTransactions,
-      { description: description, value: value, type: type },
+      {
+        description: description,
+        value: `R$ ${(+value).toFixed(2).replace(".", ",")}`,
+        type: type,
+      },
     ]);
     console.log(listTransactions);
   };

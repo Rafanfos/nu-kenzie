@@ -19,7 +19,7 @@ const List = ({ listTransactions }) => {
             <div className="value_trash">
               <span className="grey4 card-span">{value}</span>
               <button>
-                <img src="./assets/trash.png" alt="trash" />
+                <div></div>
               </button>
             </div>
           </li>

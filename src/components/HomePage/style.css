@@ -34,7 +34,8 @@ nav > button {
 }
 
 nav > button:hover {
-  background-color: var(--grey3);
+  background-color: var(--grey-3);
+  color: var(--grey-1);
 }
 
 .main_home {
