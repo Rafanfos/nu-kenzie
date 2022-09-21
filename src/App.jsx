@@ -5,7 +5,7 @@ import LandingPage from "./components/LandingPage";
 
 const App = () => {
   const [entered, setEntered] = useState(false);
-  // const [listTransactions, setListTransactions] = useState([]);
+  //
 
   return (
     <div className="App">

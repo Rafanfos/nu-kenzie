@@ -1,6 +1,10 @@
+import Form from "../Form";
+import { useState } from "react";
 import "./style.css";
 
 const HomePage = ({ setEntered }) => {
+  const [listTransactions, setListTransactions] = useState([]);
+
   return (
     <div className="landing-page">
       <header className="grey1">
@@ -11,7 +15,15 @@ const HomePage = ({ setEntered }) => {
           </button>
         </nav>
       </header>
-      <main></main>
+      <main>
+        <div className="form_total">
+          <Form
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          ></Form>
+        </div>
+        <div></div>
+      </main>
     </div>
   );
 };
