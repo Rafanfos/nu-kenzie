@@ -2,11 +2,27 @@
   --primary: #fd377e;
   --primary-2: #e34981;
   --secondary: #03b898;
+  --grey-1: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #343a40;
 }
 
 .primary {
   background-color: var(--primary);
 }
+
+.grey1 {
+  background-color: var(--grey-1);
+}
+
+.grey2 {
+  background-color: var(--grey-2);
+}
+
+.grey3 {
+  color: var(--grey-3);
+}
+
 .white {
   color: #ffff;
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import HomePage from "./components/HomePage";
+import LandingPage from "./components/LandingPage";
 
 const App = () => {
   const [entered, setEntered] = useState(false);
@@ -9,9 +10,9 @@ const App = () => {
   return (
     <div className="App">
       {!entered ? (
-        <HomePage setEntered={setEntered}></HomePage>
+        <LandingPage setEntered={setEntered}></LandingPage>
       ) : (
-        console.log("Indo para dashboard")
+        <HomePage setEntered={setEntered}></HomePage>
       )}
     </div>
   );
