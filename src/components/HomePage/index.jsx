@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./style.css";
 import Form from "../Form";
 import List from "../List";
+import Total from "../Total";
 
 const HomePage = ({ setEntered }) => {
   const [listTransactions, setListTransactions] = useState([]);
@@ -22,6 +23,7 @@ const HomePage = ({ setEntered }) => {
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
           ></Form>
+          <Total listTransactions={listTransactions}></Total>
         </div>
         <div className="list">
           <List listTransactions={listTransactions}></List>

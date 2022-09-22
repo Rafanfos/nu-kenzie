@@ -17,7 +17,9 @@ const List = ({ listTransactions }) => {
               </div>
             </div>
             <div className="value_trash">
-              <span className="grey4 card-span">{value}</span>
+              <span className="grey4 card-span">{`R$ ${Math.abs(value)
+                .toFixed(2)
+                .replace(".", ",")}`}</span>
               <button>
                 <div></div>
               </button>

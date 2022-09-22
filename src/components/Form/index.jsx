@@ -12,11 +12,14 @@ const Form = ({ listTransactions, setListTransactions }) => {
       ...listTransactions,
       {
         description: description,
-        value: `R$ ${(+value).toFixed(2).replace(".", ",")}`,
+        value: type === "Entrada" ? +value : +value * -1,
         type: type,
       },
     ]);
-    console.log(listTransactions);
+
+    setDescription("");
+    setValue("");
+    setType("");
   };
 
   return (
@@ -28,8 +31,9 @@ const Form = ({ listTransactions, setListTransactions }) => {
         className="grey1"
         placeholder="Digite aqui sua descrição"
         id="description"
-        onChange={(event) => setDescription(event.target.value)}
         required
+        value={description}
+        onChange={(event) => setDescription(event.target.value)}
       ></input>
       <span className="grey50 small">Ex: compra de roupas</span>
       <div className="values">
@@ -42,8 +46,9 @@ const Form = ({ listTransactions, setListTransactions }) => {
               className="grey1"
               placeholder="1"
               id="value"
-              onChange={(event) => setValue(event.target.value)}
               required
+              value={value}
+              onChange={(event) => setValue(event.target.value)}
             ></input>
             <span className="grey3">R$</span>
           </div>
@@ -55,8 +60,9 @@ const Form = ({ listTransactions, setListTransactions }) => {
           <select
             id="type"
             className="grey1 grey3"
-            onChange={(event) => setType(event.target.value)}
             required
+            value={type}
+            onChange={(event) => setType(event.target.value)}
           >
             <option></option>
             <option className="grey3">Entrada</option>
