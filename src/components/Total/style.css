@@ -1,0 +1,23 @@
+.total_value {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 30px;
+  width: 80%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#total_value-text {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#total_value {
+  color: var(--primary);
+}
