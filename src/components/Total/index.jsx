@@ -15,7 +15,7 @@ const Total = ({ listTransactions }) => {
         <span className="small grey3">O valor se refere ao saldo</span>
       </div>
       <span id="total_value">
-        {totalValue > 0
+        {totalValue >= 0
           ? `R$ ${Math.abs(totalValue).toFixed(2).replace(".", ",")}`
           : `- R$ ${Math.abs(totalValue).toFixed(2).replace(".", ",")}`}
       </span>

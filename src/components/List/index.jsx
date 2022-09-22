@@ -1,6 +1,7 @@
+import RemoveButton from "../RemoveItem";
 import "./style.css";
 
-const List = ({ listTransactions }) => {
+const List = ({ listTransactions, setListTransactions }) => {
   return (
     <ul>
       {listTransactions.map(({ description, value, type }, index) => {
@@ -20,9 +21,10 @@ const List = ({ listTransactions }) => {
               <span className="grey4 card-span">{`R$ ${Math.abs(value)
                 .toFixed(2)
                 .replace(".", ",")}`}</span>
-              <button>
-                <div></div>
-              </button>
+              <RemoveButton
+                setListTransactions={setListTransactions}
+                index={index}
+              ></RemoveButton>
             </div>
           </li>
         );

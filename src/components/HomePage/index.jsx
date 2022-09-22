@@ -26,7 +26,10 @@ const HomePage = ({ setEntered }) => {
           <Total listTransactions={listTransactions}></Total>
         </div>
         <div className="list">
-          <List listTransactions={listTransactions}></List>
+          <List
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          ></List>
         </div>
       </main>
     </div>

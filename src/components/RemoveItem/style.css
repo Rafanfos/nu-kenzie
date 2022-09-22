@@ -1,0 +1,32 @@
+.remove_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  padding: 0;
+  width: 22px;
+}
+
+.remove_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-1);
+  height: 22px;
+  width: 22px;
+}
+
+.remove_button:hover {
+  background-color: var(--grey-3);
+}
+
+.remove_button > div {
+  padding: 5px;
+  background-image: url("../../../public/assets/trash.svg");
+  background-size: cover;
+}
+
+.remove_button > div:hover {
+  cursor: pointer;
+  background-image: url("../../../public/assets/alternate_trash.svg");
+}
