@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 80%;
+  animation: top-to-bottom 1s;
+  overflow: hidden;
 }
 
 .presentation_text {
@@ -77,5 +79,15 @@ button {
 
   #start {
     margin-top: -50px;
+  }
+}
+
+@keyframes top-to-bottom {
+  0% {
+    margin-top: 100%;
+  }
+
+  100% {
+    margin-top: 0;
   }
 }
