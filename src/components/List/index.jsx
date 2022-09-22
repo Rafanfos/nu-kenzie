@@ -1,10 +1,10 @@
 import RemoveButton from "../RemoveItem";
 import "./style.css";
 
-const List = ({ listTransactions, setListTransactions }) => {
+const List = ({ setListTransactions, filterTransactions }) => {
   return (
     <ul>
-      {listTransactions.map(({ description, value, type }, index) => {
+      {filterTransactions.map(({ description, value, type }, index) => {
         return (
           <li key={index} className="grey1">
             <div>

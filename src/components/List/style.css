@@ -17,6 +17,7 @@ li {
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
+  animation: expansion 1s;
   overflow: hidden;
 }
 
@@ -52,39 +53,6 @@ li > div {
   height: 60%;
 }
 
-/* .value_trash > button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 22px;
-  padding: 0;
-  width: 22px;
-}
-
-.value_trash > button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--grey-1);
-  height: 22px;
-  width: 22px;
-}
-
-.value_trash > button:hover {
-  background-color: var(--grey-3);
-}
-
-button > div {
-  padding: 5px;
-  background-image: url("../../../public/assets/trash.svg");
-  background-size: cover;
-}
-
-button > div:hover {
-  cursor: pointer;
-  background-image: url("../../../public/assets/alternate_trash.svg");
-} */
-
 @media (min-width: 768px) {
   li {
     height: 80px;
@@ -93,5 +61,24 @@ button > div:hover {
   #retangle {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+  }
+}
+
+@keyframes expansion {
+  0% {
+    width: 0;
+    height: 0;
+    filter: blur(50px);
+  }
+
+  50% {
+    width: 50%;
+    height: 50%;
+    filter: blur(25px);
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
   }
 }

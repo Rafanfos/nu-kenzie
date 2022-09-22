@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./style.css";
 import Form from "../Form";
-import List from "../List";
 import Total from "../Total";
+import Filters from "../Filters";
 
 const HomePage = ({ setEntered }) => {
   const [listTransactions, setListTransactions] = useState([]);
@@ -25,12 +25,10 @@ const HomePage = ({ setEntered }) => {
           ></Form>
           <Total listTransactions={listTransactions}></Total>
         </div>
-        <div className="list">
-          <List
-            listTransactions={listTransactions}
-            setListTransactions={setListTransactions}
-          ></List>
-        </div>
+        <Filters
+          listTransactions={listTransactions}
+          setListTransactions={setListTransactions}
+        ></Filters>
       </main>
     </div>
   );

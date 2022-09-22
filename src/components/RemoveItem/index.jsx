@@ -2,12 +2,16 @@ import "./style.css";
 
 const RemoveButton = ({ setListTransactions, index }) => {
   const removeItem = () => {
-    setListTransactions((previouslistTrasactions) =>
-      previouslistTrasactions.filter(
-        (transaction) => previouslistTrasactions.indexOf(transaction) !== index
+    setListTransactions((previouslistTransactions) =>
+      previouslistTransactions.filter(
+        (transaction) => previouslistTransactions.indexOf(transaction) !== index
       )
     );
   };
+
+  // const total = () => {
+  //   setFilterTransactions(listTransactions);
+  // };
 
   return (
     <button className="remove_button">
