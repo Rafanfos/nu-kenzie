@@ -20,4 +20,5 @@
 
 #total_value {
   color: var(--primary);
+  font-weight: 700;
 }
