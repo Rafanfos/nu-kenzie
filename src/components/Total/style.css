@@ -3,8 +3,8 @@
   justify-content: space-between;
   border: 1px solid #e9ecef;
   border-radius: 4px;
-  padding: 30px;
-  width: 80%;
+  padding: 15px;
+  width: 90%;
 }
 
 .text {
@@ -21,4 +21,10 @@
 #total_value {
   color: var(--primary);
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .total_value {
+    width: 80%;
+  }
 }

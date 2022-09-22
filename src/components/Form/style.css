@@ -2,10 +2,10 @@ form {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 80%;
+  width: 90%;
   height: 200px;
   border: 1px solid var(--grey-2);
-  padding: 30px;
+  padding: 15px;
   gap: 19px;
   font-family: "Inter", sans-serif;
 }
@@ -62,7 +62,7 @@ button:hover {
 
 @media (min-width: 768px) {
   form {
-    width: 60%;
+    width: 80%;
     height: 80%;
   }
 }
