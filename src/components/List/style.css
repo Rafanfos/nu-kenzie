@@ -52,7 +52,7 @@ li > div {
   height: 60%;
 }
 
-.value_trash > button {
+/* .value_trash > button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +83,7 @@ button > div {
 button > div:hover {
   cursor: pointer;
   background-image: url("../../../public/assets/alternate_trash.svg");
-}
+} */
 
 @media (min-width: 768px) {
   li {
