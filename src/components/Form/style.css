@@ -1,0 +1,68 @@
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+  height: 200px;
+  border: 1px solid var(--grey-2);
+  padding: 15px;
+  gap: 19px;
+  font-family: "Inter", sans-serif;
+}
+
+label {
+  font-size: 12px;
+}
+
+input {
+  width: 90%;
+  border: none;
+  height: 30px;
+}
+
+.values {
+  display: flex;
+  gap: 10px;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#value {
+  width: 50%;
+}
+
+span {
+  font-size: 12px;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 5px;
+}
+
+select {
+  border: 1px solid var(--grey-1);
+  outline: none;
+  height: 30px;
+}
+
+button {
+  padding: 13px 20px;
+}
+
+button:hover {
+  background-color: var(--primary-2);
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 80%;
+    height: 80%;
+  }
+}

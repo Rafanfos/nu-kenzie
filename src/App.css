@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+  --primary: #fd377e;
+  --primary-2: #e34981;
+  --secondary: #03b898;
+  --grey-1: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #343a40;
+  --grey-4: #212529;
+  --grey-50: #868e96;
+}
+
+.primary {
+  background-color: var(--primary);
+}
+
+.secondary {
+  background-color: var(--secondary);
+}
+
+.grey1 {
+  background-color: var(--grey-1);
+}
+
+.grey2 {
+  background-color: var(--grey-2);
+}
+
+.grey3 {
+  color: var(--grey-3);
+}
+
+.grey4 {
+  color: var(--grey-4);
+}
+
+.grey50 {
+  color: var(--grey-50);
+}
+
+.white {
+  color: #ffff;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
