@@ -5,12 +5,14 @@ const Form = ({ listTransactions, setListTransactions }) => {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [type, setType] = useState("");
-
+  const [id, setId] = useState(0);
   const handleTrasactions = (event) => {
     event.preventDefault();
+    setId(id + 1);
     setListTransactions([
       ...listTransactions,
       {
+        id: id,
         description: description,
         value: type === "Entrada" ? +value : +value * -1,
         type: type,

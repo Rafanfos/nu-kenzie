@@ -1,17 +1,11 @@
 import "./style.css";
 
-const RemoveButton = ({ setListTransactions, index }) => {
+const RemoveButton = ({ setListTransactions, id }) => {
   const removeItem = () => {
     setListTransactions((previouslistTransactions) =>
-      previouslistTransactions.filter(
-        (transaction) => previouslistTransactions.indexOf(transaction) !== index
-      )
+      previouslistTransactions.filter((transaction) => transaction.id !== id)
     );
   };
-
-  // const total = () => {
-  //   setFilterTransactions(listTransactions);
-  // };
 
   return (
     <button className="remove_button">
