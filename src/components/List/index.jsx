@@ -4,9 +4,9 @@ import "./style.css";
 const List = ({ setListTransactions, filterTransactions }) => {
   return (
     <ul>
-      {filterTransactions.map(({ description, value, type }, index) => {
+      {filterTransactions.map(({ id, description, value, type }) => {
         return (
-          <li key={index} className="grey1">
+          <li key={id} className="grey1">
             <div>
               <div
                 id="retangle"
@@ -23,7 +23,7 @@ const List = ({ setListTransactions, filterTransactions }) => {
                 .replace(".", ",")}`}</span>
               <RemoveButton
                 setListTransactions={setListTransactions}
-                index={index}
+                id={id}
               ></RemoveButton>
             </div>
           </li>
