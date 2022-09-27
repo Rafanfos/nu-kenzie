@@ -8,8 +8,8 @@ const RemoveButton = ({ setListTransactions, id }) => {
   };
 
   return (
-    <button className="remove_button">
-      <div onClick={removeItem}></div>
+    <button className="remove_button" onClick={removeItem}>
+      <div></div>
     </button>
   );
 };
